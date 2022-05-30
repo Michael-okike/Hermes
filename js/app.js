@@ -137,7 +137,7 @@ function compareBmi(testData) {
     let meritHigherBMI = bmi1 > bmi2;
 
     let result = Object.values(testData)[0][2] + "'s BMI is " + bmi1.toFixed(2) + " and " + Object.values(testData)[1][2] + 
-    "'s BMI is " + bmi2.toFixed(2) + ". Therefore " + Object.values(testData)[0][2] + " having a higher BMI is " + meritHigherBMI + "."
+    "'s BMI is " + bmi2.toFixed(2) + ". Hence " + Object.values(testData)[0][2] + " having a higher BMI is " + meritHigherBMI + "."
 
     return result;
 }
