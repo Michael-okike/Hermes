@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#card::after {
+    content: '';
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    z-index: 2;
+    background-color: sandybrown;
+    position: absolute;
+    bottom: -8%;
+    right: -10%;
+    transform: rotate(30deg);
+}
+
+.main-body {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width="769px"){
+}
+
+.team-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-name p, .team-name h1 {
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.team-members {
+    width: 30%;
+    z-index: 3;
+    color: white;
+}
+
+.team-members p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 0;
+    mix-blend-mode: color-burn;
+}
+
+.team-members .leader::before {
+    content: url("/img/hermes.png");
+    display: inline-block;
+    width: 31px;
+    height: 30px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.team-members .members::before {
+    content: url("/img/laurel-wreath-150577.svg");
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    margin-right: 5px;
+}
